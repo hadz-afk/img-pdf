@@ -1,5 +1,5 @@
 'use strict';
-const $=id=>document.getElementById(id);const sizes={A4:[210,297],A3:[297,420],A5:[148,210],Letter:[215.9,279.4],Legal:[215.9,355.6],Tabloid:[279.4,431.8]};
+const $=id=>document.getElementById(id);const sizes={A4:[210,297],A3:[297,420],A5:[148,210],Letter:[215.9,279.4],Legal:[215.9,355.6],Tabloid:[279.4,431.8],Long:[215.9,330.2]};
 const defaults=()=>({size:'A4',orientation:'Portrait',unit:'mm',width:210,height:297,fit:'Fit',same:true,top:12,bottom:12,left:12,right:12,background:'White',color:'#FFFFFF',layout:'1 × 1',cols:2,rows:2,gapX:5,gapY:5,gridMargin:0,alignX:'Center',alignY:'Middle',quality:150});let settings=defaults(),images=[],selected=null,currentPage=0,busy=false,downloadUrl=null,dragged=null;
 const edits=()=>({rotation:0,flipX:false,flipY:false,brightness:100,contrast:100,saturation:100,grayscale:false,sharpen:0,crop:{x:0,y:0,w:100,h:100},customW:100,customH:100,x:0,y:0,lock:true});
 function toast(t){$('toast').textContent=t;$('toast').style.display='block';clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('toast').style.display='none',4500)}
