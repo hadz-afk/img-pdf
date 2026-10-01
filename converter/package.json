@@ -1,0 +1,12 @@
+{
+  "name": "image-to-pdf-converter",
+  "version": "1.0.0",
+  "description": "Private browser-based image editing and PDF conversion",
+  "scripts": {
+    "check": "node --check dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

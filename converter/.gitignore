@@ -1,0 +1,12 @@
+node_modules/
+.vercel/
+.env
+.env.*
+desktop.png
+mobile.png
+test.pdf
+.sites-runtime/
+.sites-tools/
+
+publish.cjs
+site.tar.gz
